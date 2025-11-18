@@ -1,7 +1,7 @@
-import React from 'react'
-import type { HeroSectionBlock } from '@/payload-types'
 import { CMSLink } from '@/components/Link'
 import { Media } from '@/components/Media'
+import type { HeroSectionBlock } from '@/payload-types'
+import React from 'react'
 
 export const HeroSectionBlock: React.FC<HeroSectionBlock> = ({
   title,
@@ -14,7 +14,7 @@ export const HeroSectionBlock: React.FC<HeroSectionBlock> = ({
       {backgroundImage && typeof backgroundImage !== 'string' && (
         <>
           <div className="absolute inset-0 pointer-events-none">
-            <Media resource={backgroundImage} className="w-full h-full object-cover" />
+            <Media resource={backgroundImage} className="w-full h-full object-cover" subClassName="block h-full" />
           </div>
           <div className="absolute inset-0 bg-white/80" />
         </>

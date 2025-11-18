@@ -1,6 +1,6 @@
 # Tod system design test
 
-## How to start
+## Quickstart
 
 ### Run the project
 To start this project simply run

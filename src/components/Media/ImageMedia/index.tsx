@@ -3,13 +3,13 @@
 import type { StaticImageData } from 'next/image'
 
 import { cn } from '@/utilities/ui'
-import NextImage from 'next/image'
 import React from 'react'
 
 import type { Props as MediaProps } from '../types'
 
 import { cssVariables } from '@/cssVariables'
 import { getMediaUrl } from '@/utilities/getMediaUrl'
+import Image from 'next/image'
 
 const { breakpoints } = cssVariables
 
@@ -58,7 +58,7 @@ export const ImageMedia: React.FC<MediaProps> = (props) => {
 
   return (
     <picture className={cn(pictureClassName)}>
-      <NextImage
+      <Image
         alt={alt || ''}
         className={cn(imgClassName)}
         fill={fill}
