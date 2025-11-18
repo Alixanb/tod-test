@@ -25,7 +25,11 @@ export async function POST(): Promise<Response> {
 
     return Response.json({ success: true })
   } catch (e) {
+    const errorMessage = e instanceof Error ? e.message : String(e)
+    const errorStack = e instanceof Error ? e.stack : ''
+    console.error('Seeding error:', errorMessage)
+    console.error('Stack trace:', errorStack)
     payload.logger.error({ err: e, message: 'Error seeding data' })
-    return new Response('Error seeding data.', { status: 500 })
+    return new Response(`Error seeding data: ${errorMessage}\n\n${errorStack}`, { status: 500 })
   }
 }
