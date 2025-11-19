@@ -14,7 +14,7 @@ export const HeroSectionBlock: React.FC<HeroSectionBlock> = ({
       {backgroundImage && typeof backgroundImage !== 'string' && (
         <>
           <div className="absolute inset-0 pointer-events-none">
-            <Media resource={backgroundImage} className="w-full h-full object-cover" subClassName="block h-full" />
+            <Media resource={backgroundImage} className="w-full h-full object-cover" subClassName=" h-full" />
           </div>
           <div className="absolute inset-0 bg-white/80" />
         </>
