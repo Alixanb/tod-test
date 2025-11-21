@@ -7,7 +7,6 @@ import { CallToAction } from '../../blocks/CallToAction/config'
 import { Content } from '../../blocks/Content/config'
 import { FormBlock } from '../../blocks/Form/config'
 import { MediaBlock } from '../../blocks/MediaBlock/config'
-import { HeroSection } from '../../blocks/HeroSection/config'
 import { ImagePair } from '../../blocks/ImagePair/config'
 import { ProductGrid } from '../../blocks/ProductGrid/config'
 import { FeaturesGrid } from '../../blocks/FeaturesGrid/config'
@@ -77,7 +76,7 @@ export const Pages: CollectionConfig<'pages'> = {
             {
               name: 'layout',
               type: 'blocks',
-              blocks: [HeroSection, ImagePair, ProductGrid, FeaturesGrid, PricingSection, CallToAction, Content, MediaBlock, Archive, FormBlock],
+              blocks: [ImagePair, ProductGrid, FeaturesGrid, PricingSection, CallToAction, Content, MediaBlock, Archive, FormBlock],
               required: true,
               admin: {
                 initCollapsed: true,

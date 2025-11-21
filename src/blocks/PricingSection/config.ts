@@ -17,20 +17,21 @@ export const PricingSection: Block = {
           defaultValue: 'Offre 1',
         },
         {
-          name: 'price',
+          name: 'priceMonth',
           type: 'number',
           required: true,
           defaultValue: 50,
         },
         {
+          name: 'priceYear',
+          type: 'number',
+          required: true,
+          defaultValue: 500,
+        },
+        {
           name: 'currency',
           type: 'text',
           defaultValue: '$',
-        },
-        {
-          name: 'period',
-          type: 'text',
-          defaultValue: '/ mo',
         },
         {
           name: 'features',

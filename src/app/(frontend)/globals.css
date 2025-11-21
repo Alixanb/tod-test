@@ -15,49 +15,38 @@
 
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 12%;
 
-    --card: 240 5% 96%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 247 40% 41%;
+    --primary-foreground: #E4E8FB;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 231 80% 97%;
+    --secondary-foreground: 247 40% 41%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 89%;
+    --muted-foreground: 0 0% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 231 80% 97%;
+    --accent-foreground: 247 40% 41%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 6% 80%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 46%;
+    --input: 0 0% 85%;
+    --ring: 247 40% 41%;
 
-    --radius: 0.2rem;
+    --radius: 0.5rem;
 
     --success: 196 52% 74%;
     --warning: 34 89% 85%;
     --error: 10 100% 86%;
-
-    --sds-color-text-default-default: 0 0% 12%;
-    --sds-color-background-neutral-tertiary: 0 0% 89%;
-    --sds-color-border-neutral-secondary: 0 0% 46%;
-    --sds-typography-body-size-medium: 16px;
-    --sds-typography-body-font-family: Inter;
-    --sds-typography-body-font-weight-regular: 400;
-    --sds-size-space-200: 8px;
-    --sds-size-space-300: 12px;
-    --sds-size-radius-200: 8px;
-    --sds-size-stroke-border: 1px;
   }
 
   [data-theme='dark'] {
@@ -92,10 +81,6 @@
     --success: 196 100% 14%;
     --warning: 34 51% 25%;
     --error: 10 39% 43%;
-
-    --sds-color-text-default-default: 0 0% 88%;
-    --sds-color-background-neutral-tertiary: 0 0% 15%;
-    --sds-color-border-neutral-secondary: 0 0% 50%;
   }
 }
 

@@ -16,35 +16,29 @@ export const desktopHome = ({
     slug: 'home',
     _status: 'published',
     hero: {
-      type: 'none',
+      title: "test",
+      subtitle: "test",
+      backgroundImage: heroImage,
+      links: [
+        {
+          link: {
+            type: 'custom',
+            url: '#projects',
+            label: 'Voir nos projets',
+            appearance: 'outline',
+          },
+        },
+        {
+          link: {
+            type: 'custom',
+            url: '#contact',
+            label: 'Prendre contact',
+            appearance: 'default',
+          },
+        },
+      ],
     },
     layout: [
-      {
-        blockName: 'Hero Section',
-        blockType: 'heroSection',
-        title: 'Des humains au service de vos projets créatifs et digitaux.',
-        subtitle:
-          'Agence digitale à Strasbourg, Orléans et Paris, centrée sur la stratégie, le design et le développement de marques ambitieuses sur le web.',
-        backgroundImage: heroImage,
-        links: [
-          {
-            link: {
-              type: 'custom',
-              url: '#projects',
-              label: 'Voir nos projets',
-              appearance: 'outline',
-            },
-          },
-          {
-            link: {
-              type: 'custom',
-              url: '#contact',
-              label: 'Prendre contact',
-              appearance: 'default',
-            },
-          },
-        ],
-      },
       {
         blockName: 'Image Pair',
         blockType: 'imagePair',

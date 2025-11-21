@@ -51,10 +51,10 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
-        'sds-200': 'var(--sds-size-radius-200)',
+        lg: 'calc(var(--radius) + 2px)',
+        md: 'var(--radius)',
+        sm: 'calc(var(--radius) - 2px)',
+        DEFAULT: 'var(--radius)', // Add this line
       },
       colors: {
         accent: {
@@ -93,35 +93,10 @@ const config = {
         success: 'hsl(var(--success))',
         error: 'hsl(var(--error))',
         warning: 'hsl(var(--warning))',
-        sds: {
-          text: {
-            'default-default': 'hsl(var(--sds-color-text-default-default))',
-          },
-          background: {
-            'neutral-tertiary': 'hsl(var(--sds-color-background-neutral-tertiary))',
-          },
-          border: {
-            'neutral-secondary': 'hsl(var(--sds-color-border-neutral-secondary))',
-          },
-        },
       },
       fontFamily: {
         mono: ['var(--font-geist-mono)'],
         sans: ['var(--font-geist-sans)'],
-        sds: ['var(--sds-typography-body-font-family)'],
-      },
-      fontSize: {
-        'sds-body-medium': 'var(--sds-typography-body-size-medium)',
-      },
-      fontWeight: {
-        'sds-regular': 'var(--sds-typography-body-font-weight-regular)',
-      },
-      spacing: {
-        'sds-200': 'var(--sds-size-space-200)',
-        'sds-300': 'var(--sds-size-space-300)',
-      },
-      borderWidth: {
-        'sds-border': 'var(--sds-size-stroke-border)',
       },
       keyframes: {
         'accordion-down': {

@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import type { FeaturesGridBlock as FeaturesGridBlockProps } from '@/payload-types'
 import React from 'react'
 
@@ -50,16 +51,16 @@ export const FeaturesGridBlock: React.FC<FeaturesGridBlockProps> = ({ heading, s
             const { icon, title, description, buttonText } = feature
             return (
               <div key={index} className="flex-1 min-w-[240px] flex flex-wrap gap-6">
-                <div className="text-[#483f94] w-8 h-8">{icons[icon as keyof typeof icons]}</div>
+                <div className="text-primary w-8 h-8">{icons[icon as keyof typeof icons]}</div>
                 <div className="flex-1 min-w-[160px] flex flex-col gap-4">
                   <div className="flex flex-col gap-2">
                     <h3 className="text-2xl font-semibold leading-tight tracking-tight">{title}</h3>
                     <p className="text-base text-gray-600 leading-relaxed">{description}</p>
                   </div>
                   {buttonText && (
-                    <button className="bg-[#483f94] text-white px-3 py-2 rounded-lg text-base self-start">
+                    <Button variant={"outline"} className='w-fit'>
                       {buttonText}
-                    </button>
+                    </Button>
                   )}
                 </div>
               </div>

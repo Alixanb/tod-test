@@ -16,6 +16,7 @@ export const ImagePair: Block = {
       relationTo: 'media',
       required: true,
     },
+    
   ],
   labels: {
     plural: 'Image Pairs',
